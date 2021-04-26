@@ -34,7 +34,9 @@ html, body{
 
 a{
     text-decoration: none;
-    color: var(--text-gray);
+    /* color: var(--text-gayr); */
+    /* color:rgb(0, 217, 255); */
+    color:white;
 }
 
 .flex-row{
@@ -54,6 +56,7 @@ h1{
 
 h2{
     font-family: var(--Lexend);
+    color: rgb(255, 0, 212);
 }
 
 h3{
@@ -86,7 +89,7 @@ span{
 
 p{
     font-family: var(--Lexend);
-    color: var(--text-light);
+    color: white;
 }
 
 /* ------x------- Global Classes -------x-------*/
@@ -97,7 +100,7 @@ p{
    
     padding: 0 2rem;
     height: 0rem;
-    min-height: 10vh;
+    min-height: 15vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -159,7 +162,11 @@ p{
 }
 
 .nav .social{
+    
     padding: 1.4rem 0
+   
+  
+
 }
 
 .nav .social i{
@@ -177,9 +184,11 @@ p{
 
 /* --------------- Site title ---------------- */
 main .site-title{
-    background: url('../assets/final2.jpg');
-    background-size: cover;
-    height: 110vh;
+    background: url('../assets/image/madrocks-removebg-preview.png');
+    background-position: center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 60vh;
     display: flex;
     justify-content: center;
 }
@@ -210,7 +219,7 @@ main .site-title .btn:hover{
 /* --------------- Blog Carousel ------------ */
 
 main .blog{
-    background: url('../assets/Abract01.png');
+    background: url('../cool-effects-clipart-designs-abstract-png-transparent-png-cool-abstract-png-880_560-removebg-preview.png');
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
@@ -278,6 +287,16 @@ section .container .owl-nav{
 main .site-content{
     display: grid;
     grid-template-columns: 70% 30%;
+    background: url('../trash/1.jpeg')fixed 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:100%;
+    
+    
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-color: rgb(0,0,0);   */
+ 
 }
 
 main .post-content{
@@ -326,7 +345,7 @@ main .post-content .post-title a{
 .site-content .post-content .post-title .post-btn{
     border-radius: 0;
     padding: .7rem 1.5rem;
-    background: white
+    background: rgb(255, 132, 0)
 
 ;
 }
@@ -359,7 +378,7 @@ main .post-content .post-title a{
 }
 
 .site-content > .sidebar .category-list .list-items{
-    background: white
+    background: skyblue
 
 ;
     padding: .4rem 1rem;
@@ -371,7 +390,7 @@ main .post-content .post-title a{
 }
 
 .site-content > .sidebar .category-list .list-items a{
-    color:  black;
+    color: rgb(0, 0, 0);
 }
 
 .site-content .sidebar .popular-post .post-content{
@@ -414,24 +433,23 @@ main .post-content .post-title a{
     border-radius: 0;
     padding: .8rem 32%;
     margin: 1rem 0;
-    background: rgb(117, 0, 128,0.5)
+    background: rgba(2, 0, 128, 0.5)
      
 
 ;
 }
 
 .site-content .sidebar .popular-tags{
-    padding: 5rem 0;
+    padding: 1rem 0;
 }
 
 .site-content .sidebar .popular-tags .tags .tag{
-    background: rgb(117, 0, 128,0.5)
-   ;
+    background: skyblue;
 
 
-    padding: .4rem 1rem;
+    /* padding: .4rem 1rem;
     border-radius: 3rem;
-    margin: .4rem .6rem;
+    margin: .4rem .6rem; */
 }
 
 
@@ -575,7 +593,7 @@ footer.footer .move-up span:hover{
 
 @media only screen and (max-width: 520px){
     main .blog{
-        height: 125vh;
+        height: 95vh;
     }
 
     .site-content .post-content > .post-image .post-info{
@@ -592,7 +610,7 @@ footer.footer .move-up span:hover{
     }
 
     nav .toggle-collapse{
-        width: 80% !important;
+        width: 20% !important;
     }
 
 }
@@ -625,4 +643,14 @@ footer.footer .move-up span:hover{
   
   
   }
-  
+
+  @media (max-width: 768px) {
+    .text-gray {
+      float: right;
+    }
+  }
+
+
+  .map-wrapper{ width:315px;height:253px; background-color:#e6e4e4; }
+
+.map-wrapper #surabaya {width: 315px;height: 50%;}
